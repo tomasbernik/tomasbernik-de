@@ -3,67 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StempelnOne – Testseite</title>
-  <meta name="description" content="Testseite für StempelnOne">
+  <title>Tomáš Berník – Apps & Tools</title>
+  <meta name="description" content="Apps und Tools von Tomáš Berník – praktische Webanwendungen für Alltag, Lernen und Organisation.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="brand">StempelnOne</div>
-    <a class="nav-link" href="#kontakt">Kontakt</a>
+  <header class="topbar">
+    <a class="logo" href="/">TB<span>.</span></a>
+    <nav>
+      <a href="#projekte">Projekte</a>
+      <a href="#weitere">Weitere Apps</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-copy">
-        <div class="badge">Testseite auf tomasbernik.de</div>
-        <h1>Zeiterfassung.<br>Einfach gestempelt.</h1>
-        <p>
-          StempelnOne macht digitale Arbeitszeiterfassung einfach:
-          Einstempeln, ausstempeln und Arbeitszeiten übersichtlich verwalten.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="#funktionen">Funktionen ansehen</a>
-          <a class="button secondary" href="#kontakt">Kontakt</a>
+      <div class="eyebrow">Apps & Tools by Tomáš Berník</div>
+      <h1>Praktische Apps.<br>Einfach gedacht.</h1>
+      <p class="lead">
+        Kleine digitale Werkzeuge für Arbeitszeit, Lernen, Planung und Alltag.
+        Entwickelt mit Fokus auf einfache Bedienung und klare Oberflächen.
+      </p>
+      <a class="primary" href="#projekte">Projekte ansehen</a>
+    </section>
+
+    <section id="projekte" class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Ausgewählte Projekte</div>
+          <h2>Meine wichtigsten Apps</h2>
         </div>
+        <p>Drei Projekte mit eigener Subdomain und eigenständigem Auftritt.</p>
       </div>
 
-      <div class="demo-card" aria-label="Beispielansicht">
-        <div class="demo-top">
-          <span>Heute</span>
-          <span class="status">Arbeitszeit läuft</span>
-        </div>
-        <div class="time">08:03</div>
-        <div class="label">Eingestempelt seit</div>
-        <button>Ausstempeln</button>
-        <div class="summary">
-          <div><strong>06:42 h</strong><span>Arbeitszeit</span></div>
-          <div><strong>00:31 h</strong><span>Pause</span></div>
-        </div>
+      <div class="featured-grid">
+        <a class="project-card featured" href="https://stempelnone.tomasbernik.de">
+          <div class="project-icon stamp">S1</div>
+          <div class="project-meta">Zeiterfassung</div>
+          <h3>StempelnOne</h3>
+          <p>Digitale Arbeitszeiterfassung für Teams – Einstempeln, Ausstempeln und Zeiten übersichtlich verwalten.</p>
+          <span class="project-link">Projekt öffnen <b>↗</b></span>
+        </a>
+
+        <a class="project-card featured" href="https://citanka.tomasbernik.de">
+          <div class="project-icon reader">Č</div>
+          <div class="project-meta">Lernen</div>
+          <h3>Čítanka</h3>
+          <p>Eine Lese- und Lern-App mit strukturierten Texten, Niveaustufen und Inhalten für Deutschlernende.</p>
+          <span class="project-link">Projekt öffnen <b>↗</b></span>
+        </a>
+
+        <a class="project-card featured" href="https://kuechenplan.tomasbernik.de">
+          <div class="project-icon kitchen">K</div>
+          <div class="project-meta">Planung</div>
+          <h3>Küchenplan</h3>
+          <p>Wochenplanung für Küche und Speiseplan – Rezepte, Allergene, Einkaufslisten und druckbare Menüs an einem Ort.</p>
+          <span class="project-link">Projekt öffnen <b>↗</b></span>
+        </a>
       </div>
     </section>
 
-    <section id="funktionen" class="features">
-      <article>
-        <h2>Schnell</h2>
-        <p>Ein- und Ausstempeln mit einem Klick – am PC oder Smartphone.</p>
-      </article>
-      <article>
-        <h2>Übersichtlich</h2>
-        <p>Arbeitszeiten, Pausen und Korrekturen an einem Ort.</p>
-      </article>
-      <article>
-        <h2>Für Teams</h2>
-        <p>Geeignet für kleine und mittlere Unternehmen – später skalierbar.</p>
-      </article>
+    <section id="weitere" class="section secondary-section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Weitere Projekte</div>
+          <h2>Kleine Apps & Experimente</h2>
+        </div>
+        <p>Nicht jedes Projekt braucht eine eigene Domain – manche bleiben bewusst kompakt.</p>
+      </div>
+
+      <div class="small-grid">
+        <article class="small-card">
+          <div class="mini-icon">L</div>
+          <div>
+            <h3>Lístoček</h3>
+            <p>Listen und einfache Organisation.</p>
+          </div>
+        </article>
+
+        <article class="small-card">
+          <div class="mini-icon">M</div>
+          <div>
+            <h3>Moje dni</h3>
+            <p>Persönliche Tages- und Gewohnheitsübersicht.</p>
+          </div>
+        </article>
+
+        <article class="small-card">
+          <div class="mini-icon">C</div>
+          <div>
+            <h3>CigApp</h3>
+            <p>Kleine Tracking-App für den Alltag.</p>
+          </div>
+        </article>
+
+        <article class="small-card">
+          <div class="mini-icon">☁</div>
+          <div>
+            <h3>Super počasie</h3>
+            <p>Einfache Wetteransicht mit Fokus auf das Wesentliche.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="kontakt" class="cta">
-      <h2>StempelnOne befindet sich in Entwicklung.</h2>
-      <p>Diese Seite dient aktuell als Test für die Domain-Verknüpfung.</p>
+    <section class="about">
+      <div>
+        <div class="kicker">Über diese Seite</div>
+        <h2>Ein Ort für meine Projekte.</h2>
+      </div>
+      <p>
+        tomasbernik.de ist mein persönlicher Einstiegspunkt für Apps, Prototypen
+        und kleine digitale Werkzeuge. Neue Projekte kommen nach und nach dazu.
+      </p>
     </section>
   </main>
 
-  <footer>© 2026 StempelnOne – Testseite</footer>
+  <footer>
+    <span>© 2026 Tomáš Berník</span>
+    <span>tomasbernik.de</span>
+  </footer>
 </body>
 </html>
