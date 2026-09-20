@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-label="StempelnOne">
+  <defs>
+    <linearGradient id="tile" x1="18" y1="18" x2="152" y2="158" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#17324D"/>
+      <stop offset="1" stop-color="#0F2439"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="48" y1="42" x2="137" y2="137" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38D6C2"/>
+      <stop offset="1" stop-color="#315EE7"/>
+    </linearGradient>
+    <linearGradient id="one" x1="475" y1="55" x2="650" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#21BFAF"/>
+      <stop offset="1" stop-color="#315EE7"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="10" width="160" height="160" rx="38" fill="url(#tile)"/>
+  <rect x="42" y="48" width="92" height="84" rx="17" fill="#FFFFFF"/>
+  <rect x="42" y="48" width="92" height="24" rx="12" fill="#EAF1F8"/>
+  <rect x="61" y="33" width="10" height="34" rx="5" fill="#38D6C2"/>
+  <rect x="105" y="33" width="10" height="34" rx="5" fill="#38D6C2"/>
+  <circle cx="112" cy="112" r="35" fill="url(#accent)" stroke="#FFFFFF" stroke-width="6"/>
+  <path d="M112 91v22l15 10" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="112" r="3.5" fill="#FFFFFF"/>
+
+  <text x="194" y="111" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800" letter-spacing="-3" fill="#172033">Stempeln</text>
+  <text x="485" y="111" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800" letter-spacing="-3" fill="url(#one)">One</text>
+</svg>
