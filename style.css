@@ -216,3 +216,38 @@ footer {
   .small-grid { grid-template-columns: 1fr; }
   .about { grid-template-columns: 1fr; gap: 24px; padding: 32px; }
 }
+
+.small-link {
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.small-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 38px rgba(33, 49, 84, .08);
+  border-color: #d6deeb;
+}
+.arrow {
+  color: #2457e6;
+  font-size: 15px;
+}
+
+.small-card {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+a.small-card {
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+a.small-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 38px rgba(33, 49, 84, .08);
+  border-color: #d6deeb;
+}
+.small-arrow {
+  margin-left: auto;
+  color: #2457e6;
+  font-weight: 800;
+  font-size: 18px;
+}
