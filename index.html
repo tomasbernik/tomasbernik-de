@@ -1,144 +1,79 @@
 <!doctype html>
-<html lang="de">
+<html lang="sk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tomáš Berník – Apps & Tools</title>
-  <meta name="description" content="Apps und Tools von Tomáš Berník – praktische Webanwendungen für Alltag, Lernen und Organisation.">
+  <title>Tomáš Berník – Apps</title>
+  <meta name="description" content="Aplikácie a webové nástroje Tomáša Berníka.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="logo" href="/">TB<span>.</span></a>
-    <nav>
-      <a href="#projekte">Projekte</a>
-      <a href="#weitere">Weitere Apps</a>
-    </nav>
+    <a class="brand" href="/">TB<span>.</span></a>
+    <div class="lang-switch" aria-label="Language">
+      <button data-lang="sk" class="active">SK</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="en">EN</button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="eyebrow">Apps & Tools by Tomáš Berník</div>
-      <h1>Praktische Apps.<br>Einfach gedacht.</h1>
-      <p class="lead">
-        Kleine digitale Werkzeuge für Arbeitszeit, Lernen, Planung und Alltag.
-        Entwickelt mit Fokus auf einfache Bedienung und klare Oberflächen.
-      </p>
-      <a class="primary" href="#projekte">Projekte ansehen</a>
+      <p class="eyebrow" data-i18n="eyebrow">Aplikácie & nástroje</p>
+      <h1 data-i18n="title">Moje aplikácie</h1>
+      <p class="lead" data-i18n="lead">Praktické webové aplikácie pre prácu, učenie, plánovanie a každodenný život.</p>
     </section>
 
-    <section id="projekte" class="section">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Ausgewählte Projekte</div>
-          <h2>Meine wichtigsten Apps</h2>
-        </div>
-        <p>Drei Projekte mit eigener Subdomain und eigenständigem Auftritt.</p>
+    <section class="apps-grid">
+      <a class="app-card" href="https://teamzeit-web.onrender.com/" target="_blank" rel="noopener noreferrer">
+        <div class="icon-placeholder s1">S1</div>
+        <div class="card-copy"><h2>StempelnOne</h2><p data-i18n="stempelnone">Digitálna evidencia pracovného času pre firmy a tímy.</p></div>
+        <span class="open">↗</span>
+      </a>
+
+      <a class="app-card" href="https://citanka.tomasbernik.de/" target="_blank" rel="noopener noreferrer">
+        <img class="app-icon" src="https://tomasbernik.github.io/Nemecka-citanka/icons/icon-v2-512.png" alt="">
+        <div class="card-copy"><h2>Čítanka</h2><p data-i18n="citanka">Čítanie, slovná zásoba a učenie nemčiny v jednej aplikácii.</p></div>
+        <span class="open">↗</span>
+      </a>
+
+      <a class="app-card" href="https://kuechenplan.tomasbernik.de/" target="_blank" rel="noopener noreferrer">
+        <img class="app-icon" src="https://tomasbernik.github.io/kuechenplan/icon.svg" alt="">
+        <div class="card-copy"><h2>Küchenplan</h2><p data-i18n="kuechenplan">Týždenné menu, recepty, alergény a nákupné zoznamy pre škôlkovú kuchyňu.</p></div>
+        <span class="open">↗</span>
+      </a>
+
+      <a class="app-card" href="https://tomasbernik.github.io/Listocek/" target="_blank" rel="noopener noreferrer">
+        <img class="app-icon" src="https://raw.githubusercontent.com/tomasbernik/Listocek/main/public/icon.svg" alt="">
+        <div class="card-copy"><h2>Lístoček</h2><p data-i18n="listocek">Jednoduché zoznamy a praktická organizácia každodenných úloh.</p></div>
+        <span class="open">↗</span>
+      </a>
+
+      <a class="app-card" href="https://tomasbernik.github.io/stempeln/" target="_blank" rel="noopener noreferrer">
+        <img class="app-icon" src="https://tomasbernik.github.io/stempeln/icons/icon-512.png" alt="">
+        <div class="card-copy"><h2>Stempeln</h2><p data-i18n="stempeln">Jednoduchšia aplikácia na zaznamenávanie príchodov a odchodov.</p></div>
+        <span class="open">↗</span>
+      </a>
+
+      <a class="app-card" href="https://tomasbernik.github.io/cigapp/" target="_blank" rel="noopener noreferrer">
+        <img class="app-icon" src="https://tomasbernik.github.io/cigapp/icon.svg" alt="">
+        <div class="card-copy"><h2>CigApp</h2><p data-i18n="cigapp">Jednoduchý osobný tracker pre každodenné používanie.</p></div>
+        <span class="open">↗</span>
+      </a>
+
+      <div class="app-card unavailable">
+        <img class="app-icon" src="assets/moje-dni.jpg" alt="">
+        <div class="card-copy"><h2>Moje dni</h2><p data-i18n="mojedni">Osobná aplikácia na prehľad dní a každodenných záznamov.</p><span class="status" data-i18n="notpublished">Zatiaľ nie je publikovaná</span></div>
       </div>
 
-      <div class="featured-grid">
-        <a class="project-card featured" href="https://teamzeit-web.onrender.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-icon stamp">S1</div>
-          <div class="project-meta">Zeiterfassung</div>
-          <h3>StempelnOne</h3>
-          <p>Digitale Arbeitszeiterfassung für Teams – Einstempeln, Ausstempeln und Zeiten übersichtlich verwalten.</p>
-          <span class="project-link">App öffnen <b>↗</b></span>
-        </a>
-
-        <a class="project-card featured" href="https://citanka.tomasbernik.de" target="_blank" rel="noopener noreferrer">
-          <div class="project-icon reader">Č</div>
-          <div class="project-meta">Lernen</div>
-          <h3>Čítanka</h3>
-          <p>Eine Lese- und Lern-App mit strukturierten Texten, Niveaustufen und Inhalten für Deutschlernende.</p>
-          <span class="project-link">Projekt öffnen <b>↗</b></span>
-        </a>
-
-        <a class="project-card featured" href="https://kuechenplan.tomasbernik.de" target="_blank" rel="noopener noreferrer">
-          <div class="project-icon kitchen">K</div>
-          <div class="project-meta">Planung</div>
-          <h3>Küchenplan</h3>
-          <p>Wochenplanung für Küche und Speiseplan – Rezepte, Allergene, Einkaufslisten und druckbare Menüs an einem Ort.</p>
-          <span class="project-link">Projekt öffnen <b>↗</b></span>
-        </a>
+      <div class="app-card unavailable">
+        <img class="app-icon" src="assets/super-pocasie.jpg" alt="">
+        <div class="card-copy"><h2>Super počasie</h2><p data-i18n="weather">Jednoduchý prehľad počasia s dôrazom na najdôležitejšie informácie.</p><span class="status" data-i18n="notpublished">Zatiaľ nie je publikovaná</span></div>
       </div>
-    </section>
-
-    <section id="weitere" class="section secondary-section">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Weitere Projekte</div>
-          <h2>Kleine Apps & Experimente</h2>
-        </div>
-        <p>Nicht jedes Projekt braucht eine eigene Domain – manche bleiben bewusst kompakt.</p>
-      </div>
-
-      <div class="small-grid">
-        <a class="small-card small-link" href="https://tomasbernik.github.io/Listocek/" target="_blank" rel="noopener">
-          <div class="mini-icon">L</div>
-          <div>
-            <h3>Lístoček <span class="arrow">↗</span></h3>
-            <p>Listen und einfache Organisation.</p>
-          </div>
-        </a>
-
-        <a class="small-card small-link" href="https://tomasbernik.github.io/stempeln/" target="_blank" rel="noopener">
-          <div class="mini-icon">S</div>
-          <div>
-            <h3>Stempeln <span class="arrow">↗</span></h3>
-            <p>Eine weitere Zeiterfassungs-App aus meinen Projekten.</p>
-          </div>
-        </a>
-
-        <a class="small-card small-link" href="https://tomasbernik.github.io/cigapp/" target="_blank" rel="noopener">
-          <div class="mini-icon">C</div>
-          <div>
-            <h3>CigApp <span class="arrow">↗</span></h3>
-            <p>Kleine Tracking-App für den Alltag.</p>
-          </div>
-        </a>
-
-        <article class="small-card">
-          <div class="mini-icon">M</div>
-          <div>
-            <h3>Moje dni</h3>
-            <p>Persönliche Tages- und Gewohnheitsübersicht.</p>
-          </div>
-        </article>
-
-        <a class="small-card" href="https://tomasbernik.github.io/stempeln/" target="_blank" rel="noopener noreferrer">
-          <div class="mini-icon">S</div>
-          <div>
-            <h3>Stempeln</h3>
-            <p>Eine frühere bzw. kleinere Zeiterfassungs-App.</p>
-          </div>
-          <span class="small-arrow">↗</span>
-        </a>
-
-        <article class="small-card">
-          <div class="mini-icon">☁</div>
-          <div>
-            <h3>Super počasie</h3>
-            <p>Einfache Wetteransicht mit Fokus auf das Wesentliche.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="about">
-      <div>
-        <div class="kicker">Über diese Seite</div>
-        <h2>Ein Ort für meine Projekte.</h2>
-      </div>
-      <p>
-        tomasbernik.de ist mein persönlicher Einstiegspunkt für Apps, Prototypen
-        und kleine digitale Werkzeuge. Neue Projekte kommen nach und nach dazu.
-      </p>
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 Tomáš Berník</span>
-    <span>tomasbernik.de</span>
-  </footer>
+  <footer><span>© 2026 Tomáš Berník</span><span>tomasbernik.de</span></footer>
+  <script src="app.js"></script>
 </body>
 </html>
