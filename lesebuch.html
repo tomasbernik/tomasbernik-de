@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesebuch – Deutsch lesen und Wortschatz lernen</title>
+  <meta name="description" content="Lesebuch verbindet kurze deutsche Texte, Übersetzungen, Wortschatz und Übungen in einer einfachen Web-App.">
+  <meta name="author" content="Tomas Bernik">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tomas Bernik">
+  <meta property="og:title" content="Lesebuch – Deutsch lesen und Wortschatz lernen">
+  <meta property="og:description" content="Kurze Texte lesen, unbekannte Wörter übersetzen und später wiederholen.">
+  <meta property="og:url" content="https://tomasbernik.de/lesebuch.html">
+  <meta property="og:image" content="https://tomasbernik.de/assets/lesebuch/icon.png">
+  <link rel="canonical" href="https://tomasbernik.de/lesebuch.html">
+  <link rel="icon" type="image/png" href="assets/lesebuch/icon.png">
+  <link rel="apple-touch-icon" href="assets/lesebuch/icon.png">
+  <link rel="stylesheet" href="lesebuch.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Tomas Bernik – Apps">TB<span>.</span></a>
+    <nav class="top-actions" aria-label="Seitennavigation">
+      <a class="back-link" href="index.html" data-i18n="back">Alle Apps</a>
+      <div class="lang-switch" aria-label="Language">
+        <button type="button" data-lang="de" class="active">DE</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="sk">SK</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="app-label"><img src="assets/lesebuch/icon.png" alt=""><span>Lesebuch</span></div>
+        <p class="eyebrow" data-i18n="eyebrow">DEUTSCH LERNEN, INDEM DU LIEST</p>
+        <h1 data-i18n="heroTitle">Ein Text. Neue Wörter. Jeden Tag ein Stück sicherer.</h1>
+        <p class="hero-lead" data-i18n="heroLead">Lies kurze deutsche Artikel, übersetze unbekannte Wörter direkt im Text und wiederhole sie später – alles in einer App.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://citanka.tomasbernik.de/" target="_blank" rel="noopener noreferrer" data-i18n="openApp">Lesebuch öffnen</a>
+          <a class="button secondary" href="#so-funktionierts" data-i18n="howItWorks">So funktioniert’s</a>
+        </div>
+        <div class="hero-notes" aria-label="Produktmerkmale"><span data-i18n="level">Texte auf A2–B1-Niveau</span><span data-i18n="mobile">Für Handy und Browser</span></div>
+      </div>
+
+      <div class="product-stage" aria-label="Vorschau der Lesebuch-App">
+        <div class="glow glow-one"></div><div class="glow glow-two"></div>
+        <figure class="real-shot library-shot">
+          <div class="shot-toolbar"><span></span><span></span><span></span><small>Lesebuch</small></div>
+          <img src="assets/lesebuch/app-home.png" alt="Die echte Artikelübersicht in Lesebuch">
+        </figure>
+        <figure class="real-shot editor-peek">
+          <img src="assets/lesebuch/app-editor.png" alt="Der echte ChatGPT-Helfer im Artikeleditor">
+          <figcaption data-i18n="authenticPreview">Echte Ansicht aus der App</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="statement">
+      <p class="section-kicker" data-i18n="whyKicker">LESEN, VERSTEHEN, BEHALTEN</p>
+      <h2 data-i18n="whyTitle">Du musst den Lesefluss nicht mehr für jedes unbekannte Wort unterbrechen.</h2>
+      <p data-i18n="whyText">Lesebuch verbindet den Text mit Übersetzung und Wiederholung. So bleibt die Geschichte im Mittelpunkt – und der Wortschatz wächst nebenbei.</p>
+    </section>
+
+    <section class="steps" id="so-funktionierts">
+      <div class="section-heading"><p class="section-kicker" data-i18n="stepsKicker">SO FUNKTIONIERT’S</p><h2 data-i18n="stepsTitle">Vom ersten Satz zum neuen Wortschatz.</h2></div>
+      <div class="step-grid">
+        <article class="step-card read-card"><span class="step-number">01</span><div class="mini-article"><img src="assets/lesebuch/fruehstueck.jpg" alt=""><div><span>A2 · ALLTAG</span><strong>Ein kleines Frühstück</strong><p>Kurze Texte machen den Einstieg leicht.</p></div></div><h3 data-i18n="step1Title">Wähle einen Text</h3><p data-i18n="step1Text">Entdecke kurze Artikel zu Alltag, Reisen und Freizeit auf A2–B1-Niveau.</p></article>
+        <article class="step-card tap-card"><span class="step-number">02</span><div class="word-demo"><p>Wir möchten eine kleine Stadt <button type="button">besuchen</button>.</p><div><small>besuchen</small><strong>navštíviť</strong></div></div><h3 data-i18n="step2Title">Tippe auf ein Wort</h3><p data-i18n="step2Text">Lass dir ein Wort oder den ganzen Satz in deiner Muttersprache anzeigen.</p></article>
+        <article class="step-card repeat-card"><span class="step-number">03</span><div class="quiz-demo"><small>WIEDERHOLUNG · 3/8</small><strong>der Ausflug</strong><span>výlet</span><div><i></i><i></i><i></i><i></i><i></i></div></div><h3 data-i18n="step3Title">Wiederhole später</h3><p data-i18n="step3Text">Angeklickte Wörter warten in einer kurzen Wiederholung auf dich.</p></article>
+      </div>
+    </section>
+
+    <section class="ai-creator">
+      <div class="ai-copy">
+        <p class="section-kicker" data-i18n="aiKicker">EIGENE TEXTE MIT KI ERSTELLEN</p>
+        <h2 data-i18n="aiTitle">Aus deiner Idee wird ein kompletter Lernartikel.</h2>
+        <p class="ai-lead" data-i18n="aiText">Im Artikeleditor bestimmst du Niveau, Länge, Thema und gewünschte Wörter. Lesebuch bereitet daraus einen passenden Prompt für ChatGPT vor und übernimmt den fertigen Artikel anschließend als strukturiertes JSON.</p>
+        <ol class="ai-steps">
+          <li><span>01</span><div><strong data-i18n="aiStep1Title">Aufgabe beschreiben</strong><p data-i18n="aiStep1Text">Wähle Sprachniveau und Textlänge und beschreibe das gewünschte Thema.</p></div></li>
+          <li><span>02</span><div><strong data-i18n="aiStep2Title">Prompt kopieren</strong><p data-i18n="aiStep2Text">Lesebuch erstellt einen Prompt für Text oder JSON – auf Wunsch mit bestimmten Wörtern.</p></div></li>
+          <li><span>03</span><div><strong data-i18n="aiStep3Title">Artikel übernehmen</strong><p data-i18n="aiStep3Text">Füge das Ergebnis aus ChatGPT ein und bearbeite den Artikel direkt in Lesebuch weiter.</p></div></li>
+        </ol>
+      </div>
+      <figure class="authentic-editor">
+        <div class="shot-toolbar"><span></span><span></span><span></span><small data-i18n="authenticEditor">Echter Artikeleditor</small></div>
+        <img src="assets/lesebuch/app-editor.png" alt="ChatGPT-Helfer im echten Lesebuch-Artikeleditor">
+      </figure>
+    </section>
+
+    <section class="feature-split">
+      <div class="feature-visual">
+        <div class="progress-card"><div class="progress-head"><div><small data-i18n="progress">FORTSCHRITT</small><strong data-i18n="week">Diese Woche</strong></div><span>72%</span></div><div class="bars"><i style="height:35%"></i><i style="height:58%"></i><i style="height:42%"></i><i style="height:80%"></i><i style="height:66%"></i><i style="height:92%"></i><i style="height:72%"></i></div><div class="progress-labels"><span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span></div></div>
+        <div class="assignment-card"><span>✓</span><div><small data-i18n="assignment">AUFGABE</small><strong data-i18n="assignmentDone">Artikel gelesen</strong><p>Eine Reise nach Südspanien</p></div></div>
+      </div>
+      <div class="feature-copy">
+        <p class="section-kicker" data-i18n="moreKicker">MEHR ALS NUR LESEN</p><h2 data-i18n="moreTitle">Üben, spielen und den Fortschritt sehen.</h2>
+        <ul>
+          <li><span>01</span><div><strong data-i18n="feature1Title">Fragen zum Text</strong><p data-i18n="feature1Text">Prüfe direkt, was du verstanden hast.</p></div></li>
+          <li><span>02</span><div><strong data-i18n="feature2Title">Wortspiele und Wortsuche</strong><p data-i18n="feature2Text">Festige neue Begriffe mit kleinen Übungen.</p></div></li>
+          <li><span>03</span><div><strong data-i18n="feature3Title">Aufgaben für Lernende</strong><p data-i18n="feature3Text">Lehrende können Artikel zuweisen und den Status verfolgen.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="languages">
+      <div><p class="section-kicker" data-i18n="languageKicker">IN DEINER SPRACHE</p><h2 data-i18n="languageTitle">Deutsch lesen. In deiner Muttersprache verstehen.</h2></div>
+      <div class="language-cloud" aria-label="Unterstützte Muttersprachen"><span>Slovenčina</span><span>English</span><span>Polski</span><span>Русский</span><span>Magyar</span><span>Română</span><span>Italiano</span><span>Français</span><span>Türkçe</span></div>
+    </section>
+
+    <section class="final-cta">
+      <img src="assets/lesebuch/icon.png" alt=""><p class="section-kicker" data-i18n="ctaKicker">BEREIT FÜR DEN NÄCHSTEN TEXT?</p><h2 data-i18n="ctaTitle">Mach Deutsch zu einem Teil deines Alltags.</h2><p data-i18n="ctaText">Öffne Lesebuch im Browser und beginne mit deinem ersten Artikel.</p><a class="button primary light" href="https://citanka.tomasbernik.de/" target="_blank" rel="noopener noreferrer" data-i18n="openApp">Lesebuch öffnen</a>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Tomáš Berník</span><a href="index.html" data-i18n="allApps">Alle Apps</a></footer>
+  <script src="lesebuch.js"></script>
+</body>
+</html>
