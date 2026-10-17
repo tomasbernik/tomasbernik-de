@@ -1,5 +1,5 @@
-// The public name is intentionally kept in one place while the brand is still evolving.
-const APP_NAME = "Papierik";
+const APP_NAMES = { de: "Einkaufszettel", en: "Shopping list", sk: "Papierik" };
+const TITLE_SUFFIXES = { de: "die gemeinsame Einkaufsliste", en: "the shared shopping list", sk: "spoločný nákupný zoznam" };
 
 const translations = {
   de: {back:"Alle Apps",eyebrow:"EINKAUFEN, OHNE NACHRICHTEN-CHAOS",heroTitle:"Zusammen aufschreiben. Einmal einkaufen. Nichts vergessen.",heroLead:"Eine gemeinsame Einkaufsliste für euren Haushalt. Alle sehen sofort, was fehlt, wer etwas ergänzt hat und was schon im Wagen liegt.",openApp:"Papierik öffnen",howItWorks:"So funktioniert’s",shared:"Für den ganzen Haushalt",mobile:"Als App installierbar",household:"UNSER EINKAUF",whatBuy:"Was brauchen wir?",amountShop:"Menge und Geschäft⌄",oftenAdded:"OFT HINZUGEFÜGT",toBuy:"Einkaufen",milk:"Milch",bread:"Brot",apples:"Äpfel",synced:"Liste synchronisiert",whyKicker:"EINE LISTE FÜR ALLE",whyTitle:"Kein „Kannst du noch …?“ in fünf verschiedenen Chats.",whyText:"Alles landet an einem Ort. Ergänzungen erscheinen in Echtzeit und erledigte Produkte verschwinden mit einem Tippen aus dem Weg.",stepsKicker:"SO FUNKTIONIERT’S",stepsTitle:"Vom leeren Kühlschrank zur fertigen Liste.",egYoghurt:"z. B. Joghurt",twoSeconds:"In zwei Sekunden notiert",step1Title:"Schnell hinzufügen",step1Text:"Name eintippen, fertig. Menge und Geschäft ergänzt du nur, wenn du sie brauchst.",inviteCode:"EINLADUNGSCODE",step2Title:"Haushalt einladen",step2Text:"Teile einen Link oder Einladungscode. Alle arbeiten danach mit derselben Liste.",coffee:"Kaffee",tomatoes:"Tomaten",boughtBy:"Gekauft von Martin",step3Title:"Im Laden abhaken",step3Text:"Gekaufte Artikel sind für alle sofort sichtbar und bleiben nach Einkaufstagen geordnet.",organizeKicker:"SCHNELLER DURCH DEN LADEN",organizeTitle:"Die Liste sortiert sich nach Geschäften.",organizeText:"Lidl, dm, Kaufland oder ein anderes Geschäft: Produkte stehen dort, wo du sie suchst. Häufig verwendete Artikel werden beim nächsten Mal vorgeschlagen.",feature1:"Optionale Menge und Geschäft",feature2:"Vorschläge aus deinen häufigen Einkäufen",feature3:"Auch offline weiterarbeiten",live:"LIVE SYNCHRONISIERT",realtimeTitle:"Du schreibst es auf. Zu Hause sieht man es sofort.",realtimeText:"Papierik synchronisiert die gemeinsame Liste in Echtzeit. Wenn die Verbindung kurz weg ist, warten deine Änderungen und werden später übertragen.",added:"hat Milch hinzugefügt",now:"gerade eben",checked:"hat Brot abgehakt",ctaKicker:"BEREIT FÜR DEN NÄCHSTEN EINKAUF?",ctaTitle:"Eine kleine Liste, die euren Alltag leichter macht.",ctaText:"Öffne Papierik im Browser, erstelle deinen Haushalt und lade die anderen ein.",allApps:"Alle Apps"},
@@ -7,21 +7,22 @@ const translations = {
   sk: {back:"Všetky aplikácie",eyebrow:"NÁKUP BEZ CHAOSU V SPRÁVACH",heroTitle:"Spíšte ho spolu. Nakúpte raz. Nezabudnite nič.",heroLead:"Jeden spoločný nákupný zoznam pre celú domácnosť. Každý hneď vidí, čo chýba, kto to pridal a čo už je v košíku.",openApp:"Otvoriť Papierik",howItWorks:"Ako to funguje",shared:"Pre celú domácnosť",mobile:"Dá sa nainštalovať ako appka",household:"NÁŠ NÁKUP",whatBuy:"Čo treba kúpiť?",amountShop:"Množstvo a obchod⌄",oftenAdded:"ČASTO PRIDÁVATE",toBuy:"Treba kúpiť",milk:"Mlieko",bread:"Chlieb",apples:"Jablká",synced:"Zoznam je synchronizovaný",whyKicker:"JEDEN ZOZNAM PRE VŠETKÝCH",whyTitle:"Žiadne „Môžeš ešte …?“ v piatich rôznych četoch.",whyText:"Všetko je na jednom mieste. Nové položky sa zobrazia okamžite a kúpené veci odprace jedno ťuknutie.",stepsKicker:"AKO TO FUNGUJE",stepsTitle:"Od prázdnej chladničky po hotový zoznam.",egYoghurt:"napr. jogurt",twoSeconds:"Zapísané za dve sekundy",step1Title:"Rýchlo pridaj",step1Text:"Napíš názov a je to. Množstvo a obchod doplníš iba vtedy, keď ich potrebuješ.",inviteCode:"POZÝVACÍ KÓD",step2Title:"Pozvi domácnosť",step2Text:"Pošli odkaz alebo pozývací kód. Všetci potom pracujú s tým istým zoznamom.",coffee:"Káva",tomatoes:"Paradajky",boughtBy:"Kúpil Martin",step3Title:"V obchode odškrtni",step3Text:"Kúpené položky hneď vidia všetci a zostanú usporiadané podľa jednotlivých nákupov.",organizeKicker:"RÝCHLEJŠIE CEZ OBCHOD",organizeTitle:"Zoznam sa sám roztriedi podľa obchodov.",organizeText:"Lidl, dm, Kaufland alebo iný obchod: produkty nájdeš tam, kde ich hľadáš. Často používané položky appka nabudúce navrhne.",feature1:"Voliteľné množstvo a obchod",feature2:"Návrhy podľa častých nákupov",feature3:"Funguje ďalej aj bez internetu",live:"SYNCHRONIZOVANÉ NAŽIVO",realtimeTitle:"Ty to zapíšeš. Doma to hneď uvidia.",realtimeText:"Papierik synchronizuje spoločný zoznam v reálnom čase. Keď na chvíľu vypadne internet, zmeny počkajú a odošlú sa neskôr.",added:"pridala mlieko",now:"práve teraz",checked:"odškrtol chlieb",ctaKicker:"PRIPRAVENÍ NA ĎALŠÍ NÁKUP?",ctaTitle:"Malý zoznam, ktorý uľahčí každý deň.",ctaText:"Otvor Papierik v prehliadači, vytvor domácnosť a pozvi ostatných.",allApps:"Všetky aplikácie"}
 };
 
-function applyAppName(value) {
+function applyAppName(value, lang) {
   document.querySelectorAll("[data-app-name]").forEach(element => { element.textContent = value; });
-  document.title = document.title.replace(/^[^–]+/, `${value} `);
+  document.title = `${value} – ${TITLE_SUFFIXES[lang]}`;
 }
 
 function setLanguage(lang) {
   const dictionary = translations[lang] || translations.de;
+  const appName = APP_NAMES[lang] || APP_NAMES.de;
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(element => {
     const value = dictionary[element.dataset.i18n];
-    if (value) element.textContent = value.replaceAll("Papierik", APP_NAME);
+    if (value) element.textContent = value.replaceAll("Papierik", appName);
   });
   document.querySelectorAll("[data-lang]").forEach(button => button.classList.toggle("active", button.dataset.lang === lang));
   localStorage.setItem("portfolio-language", lang);
-  applyAppName(APP_NAME);
+  applyAppName(appName, lang);
 }
 
 document.querySelectorAll("[data-lang]").forEach(button => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
