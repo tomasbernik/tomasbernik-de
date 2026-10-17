@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stempeln – Arbeitszeit einfach erfassen</title>
+  <meta name="description" content="Stempeln erfasst Kommen, Gehen und Pausen mit einem Tippen und erstellt eine übersichtliche Monatsauswertung für Excel.">
+  <meta name="author" content="Tomas Bernik">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tomas Bernik">
+  <meta property="og:title" content="Stempeln – Arbeitszeit einfach erfassen">
+  <meta property="og:description" content="Ein Tippen bei der Ankunft, ein Tippen beim Gehen – den Rest behält Stempeln im Blick.">
+  <meta property="og:url" content="https://tomasbernik.de/stempeln.html">
+  <meta property="og:image" content="https://tomasbernik.de/assets/stempeln/icon.png">
+  <link rel="canonical" href="https://tomasbernik.de/stempeln.html">
+  <link rel="icon" type="image/png" href="assets/stempeln/icon.png">
+  <link rel="apple-touch-icon" href="assets/stempeln/icon.png">
+  <link rel="stylesheet" href="stempeln.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Tomas Bernik – Apps">TB<span>.</span></a>
+    <nav class="top-actions" aria-label="Seitennavigation">
+      <a class="back-link" href="index.html" data-i18n="back">Alle Apps</a>
+      <div class="lang-switch" aria-label="Language">
+        <button type="button" data-lang="de" class="active">DE</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="sk">SK</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="app-label"><img src="assets/stempeln/icon.png" alt=""><span>Stempeln</span></div>
+        <p class="eyebrow" data-i18n="eyebrow">ARBEITSZEIT, OHNE UMWEGE</p>
+        <h1 data-i18n="heroTitle">Ankommen. Tippen. Feierabend genauso.</h1>
+        <p class="hero-lead" data-i18n="heroLead">Stempeln hält Kommen, Gehen und Pausen fest, rechnet deinen Monat zusammen und macht die Abgabe als Excel-Datei einfach.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://tomasbernik.github.io/stempeln/" target="_blank" rel="noopener noreferrer" data-i18n="openApp">Stempeln öffnen</a>
+          <a class="button secondary" href="#so-funktionierts" data-i18n="howItWorks">So funktioniert’s</a>
+        </div>
+        <div class="hero-notes"><span data-i18n="mobile">Fürs Handy gemacht</span><span data-i18n="installable">Als App installierbar</span></div>
+      </div>
+
+      <div class="product-stage" aria-label="Vorschau der Stempeln-App">
+        <img class="tulips tulips-one" src="assets/stempeln/tulips.png" alt="" aria-hidden="true">
+        <div class="sun-orb"></div>
+        <div class="phone">
+          <div class="phone-bar"></div>
+          <div class="app-head"><div><small data-i18n="today">HEUTE · FREITAG</small><strong>Stempeln</strong></div><img src="assets/stempeln/horse.png" alt="" aria-hidden="true"></div>
+          <div class="today-card"><small data-i18n="currentStatus">AKTUELLER STATUS</small><strong data-i18n="notRecorded">Noch nicht erfasst</strong><span data-i18n="tapHint">Kommen und Gehen mit einem Tippen</span></div>
+          <div class="stamp-buttons"><div class="stamp-in"><i>→</i><span data-i18n="clockIn">Einstempeln</span></div><div class="stamp-out"><i>←</i><span data-i18n="clockOut">Ausstempeln</span></div></div>
+          <div class="mini-month"><div><small data-i18n="month">MONAT</small><strong data-i18n="monthName">Oktober 2026</strong></div><span>⌄</span></div>
+          <div class="summary-row"><div><small data-i18n="total">Gesamt</small><b>42:15</b></div><div><small data-i18n="balance">Saldo</small><b>+1:30</b></div><div><small data-i18n="days">Tage</small><b>13</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <p class="section-kicker" data-i18n="whyKicker">ZEIT ERFASSEN, NICHT VERWALTEN</p>
+      <h2 data-i18n="whyTitle">Deine Arbeitszeit braucht keine komplizierte Software.</h2>
+      <p data-i18n="whyText">Stempeln konzentriert sich auf das, was du wirklich brauchst: den Arbeitstag starten und beenden, Einträge bei Bedarf korrigieren und am Monatsende eine saubere Übersicht haben.</p>
+    </section>
+
+    <section class="steps" id="so-funktionierts">
+      <div class="section-heading"><p class="section-kicker" data-i18n="stepsKicker">SO FUNKTIONIERT’S</p><h2 data-i18n="stepsTitle">Vom ersten Tippen zur fertigen Monatsübersicht.</h2></div>
+      <div class="step-grid">
+        <article class="step-card green-card"><span class="step-number">01</span><div class="step-demo tap-demo"><span class="pulse"></span><strong data-i18n="clockIn">Einstempeln</strong><small>08:02</small></div><h3 data-i18n="step1Title">Kommen und Gehen erfassen</h3><p data-i18n="step1Text">Ein großer Button speichert die aktuelle Zeit. So ist der wichtigste Schritt auch unterwegs sofort erledigt.</p></article>
+        <article class="step-card pink-card"><span class="step-number">02</span><div class="step-demo edit-demo"><div><small data-i18n="date">DATUM</small><strong>16.10.2026</strong></div><div><small data-i18n="coming">KOMMEN</small><strong>08:05</strong></div><div><small data-i18n="leaving">GEHEN</small><strong>16:20</strong></div><span>✓</span></div><h3 data-i18n="step2Title">Den Tag bei Bedarf anpassen</h3><p data-i18n="step2Text">Ändere Zeiten und Pause manuell oder markiere Urlaub, Krankheit und Feiertage.</p></article>
+        <article class="step-card yellow-card"><span class="step-number">03</span><div class="step-demo export-demo"><div class="sheet"><span></span><span></span><span></span><span></span></div><strong>.xlsx</strong><small data-i18n="ready">BEREIT ZUM SENDEN</small></div><h3 data-i18n="step3Title">Monat exportieren</h3><p data-i18n="step3Text">Lade die vollständige Monatsübersicht für Excel herunter oder teile sie direkt per E-Mail.</p></article>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="overview-copy">
+        <p class="section-kicker" data-i18n="overviewKicker">DER MONAT AUF EINEN BLICK</p>
+        <h2 data-i18n="overviewTitle">Stunden, Saldo und Arbeitstage rechnen sich von selbst.</h2>
+        <p data-i18n="overviewText">Lege dein tägliches Soll fest und sieh sofort, wie viele Stunden du gearbeitet hast, wie dein Saldo bis gestern aussieht und wie lang ein durchschnittlicher Tag war.</p>
+        <ul>
+          <li><span>✓</span><span data-i18n="feature1">Gesamtzeit und Anzahl der Tage</span></li>
+          <li><span>✓</span><span data-i18n="feature2">Saldo auf Basis deines persönlichen Tagessolls</span></li>
+          <li><span>✓</span><span data-i18n="feature3">Alle Tage antippbar und nachträglich bearbeitbar</span></li>
+        </ul>
+      </div>
+      <div class="dashboard" aria-hidden="true">
+        <div class="dashboard-head"><div><small>ÜBERSICHT</small><strong>Oktober</strong></div><span>2026</span></div>
+        <div class="metric-grid"><div><small>GESAMT</small><strong>42:15</strong><i>Stunden</i></div><div><small>SALDO</small><strong class="positive">+1:30</strong><i>bis gestern</i></div><div><small>TAGE</small><strong>13</strong><i>erfasst</i></div><div><small>Ø TAG</small><strong>3:15</strong><i>Stunden</i></div></div>
+        <div class="day-row"><span>DO<br><b>15</b></span><div><strong>08:01 — 16:18</strong><small>30 min Pause</small></div><b>7:47</b></div>
+        <div class="day-row"><span>FR<br><b>16</b></span><div><strong>08:05 — 12:12</strong><small>Arbeit</small></div><b>4:07</b></div>
+      </div>
+    </section>
+
+    <section class="install">
+      <img class="install-tulips" src="assets/stempeln/tulips.png" alt="" aria-hidden="true">
+      <div class="install-icon"><img src="assets/stempeln/icon.png" alt=""></div>
+      <div><p class="section-kicker" data-i18n="installKicker">EINE WEB-APP, DIE SICH WIE EINE APP ANFÜHLT</p><h2 data-i18n="installTitle">Direkt im Browser starten. Auf Wunsch am Home-Bildschirm behalten.</h2><p data-i18n="installText">Öffne Stempeln auf deinem Handy und füge es zum Home-Bildschirm hinzu. Nach der Anmeldung sind deine Einträge deinem Konto zugeordnet.</p></div>
+    </section>
+
+    <section class="final-cta">
+      <img class="cta-horse" src="assets/stempeln/horse.png" alt="" aria-hidden="true">
+      <p class="section-kicker" data-i18n="ctaKicker">BEREIT FÜR DEN NÄCHSTEN ARBEITSTAG?</p>
+      <h2 data-i18n="ctaTitle">Ein Tippen am Morgen. Eine klare Übersicht am Monatsende.</h2>
+      <p data-i18n="ctaText">Öffne Stempeln im Browser, melde dich an und erfasse deinen nächsten Arbeitstag.</p>
+      <a class="button primary light" href="https://tomasbernik.github.io/stempeln/" target="_blank" rel="noopener noreferrer" data-i18n="openApp">Stempeln öffnen</a>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Tomáš Berník</span><a href="index.html" data-i18n="allApps">Alle Apps</a></footer>
+  <script src="stempeln.js"></script>
+</body>
+</html>
