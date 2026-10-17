@@ -41,23 +41,23 @@ h1 { margin: 0 0 24px; max-width: 650px; font-size: clamp(48px, 5.6vw, 76px); li
 .hero-notes { display: flex; flex-wrap: wrap; gap: 22px; color: #6e7b8d; font-size: 13px; font-weight: 700; }
 .hero-notes span::before { content: "✓"; color: var(--aqua-dark); font-weight: 900; margin-right: 7px; }
 
-.product-stage { min-height: 600px; position: relative; display: flex; align-items: center; justify-content: center; }
+.product-stage { min-height: 570px; position: relative; display: flex; align-items: center; justify-content: center; }
 .product-stage::before { content: ""; position: absolute; inset: 2% -18% 1% -8%; border-radius: 48% 52% 45% 55%; background: linear-gradient(145deg, #d7f5f3 0%, #edf9f9 55%, #fff4e7 100%); transform: rotate(-4deg); }
 .glow { position: absolute; border-radius: 50%; filter: blur(2px); }
 .glow-one { width: 120px; height: 120px; top: 55px; right: 20px; background: rgba(255,130,120,.25); }
 .glow-two { width: 90px; height: 90px; bottom: 45px; left: 30px; background: rgba(41,194,189,.22); }
 .real-shot, .authentic-editor { margin: 0; overflow: hidden; border: 1px solid rgba(173,198,201,.75); background: #fff; box-shadow: 0 28px 65px rgba(31,77,88,.20), 0 7px 20px rgba(31,77,88,.10); }
-.library-shot { width: min(100%, 620px); position: relative; z-index: 1; border-radius: 22px; transform: rotate(1.2deg); }
-.library-shot img { display: block; width: 100%; height: auto; }
+.library-shot { width: min(100%, 650px); position: relative; z-index: 1; border-radius: 22px; transform: rotate(.4deg); }
+.library-crop { aspect-ratio: 1.32; overflow: hidden; background: #eef9fd; }
+.library-crop img { display: block; width: 176%; max-width: none; height: auto; transform: translate(-21.5%, -7%); }
+.library-shot figcaption { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 18px; background: #fff; color: var(--muted); font-size: 12px; }
+.library-shot figcaption strong { color: var(--ink); font-size: 13px; }
 .shot-toolbar { height: 34px; padding: 0 13px; display: flex; align-items: center; gap: 6px; background: #f8fbfb; border-bottom: 1px solid #e4eeee; }
 .shot-toolbar span { width: 7px; height: 7px; border-radius: 50%; background: #cad9db; }
 .shot-toolbar span:first-child { background: #ff9f94; }
 .shot-toolbar span:nth-child(2) { background: #ffd37a; }
 .shot-toolbar span:nth-child(3) { background: #66d5cf; }
 .shot-toolbar small { margin-left: 6px; color: #7c8b97; font-size: 9px; font-weight: 800; }
-.editor-peek { width: 215px; height: 335px; position: absolute; z-index: 2; right: -3px; bottom: 15px; border: 7px solid #fff; border-radius: 20px; transform: rotate(-3deg); }
-.editor-peek img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.editor-peek figcaption { position: absolute; right: 9px; bottom: 9px; left: 9px; padding: 8px 7px; border-radius: 9px; background: rgba(18,33,58,.91); color: #fff; font-size: 8px; font-weight: 850; text-align: center; }
 .phone { width: 276px; height: 568px; position: absolute; overflow: hidden; border: 9px solid #fff; border-radius: 36px; background: #f7fbfb; box-shadow: 0 30px 70px rgba(31,77,88,.20), 0 8px 22px rgba(31,77,88,.12); color: #173047; }
 .phone::before { content: ""; width: 76px; height: 18px; position: absolute; z-index: 3; top: 0; left: 50%; transform: translateX(-50%); border-radius: 0 0 12px 12px; background: #fff; }
 .phone-list { transform: translate(-112px, 14px) rotate(-5deg); z-index: 1; }
@@ -169,7 +169,7 @@ footer a { text-decoration: none; font-weight: 800; }
 @media (max-width: 980px) {
   .hero { grid-template-columns: 1fr; padding-top: 40px; }
   .hero-copy { max-width: 760px; }
-  .product-stage { min-height: 640px; }
+  .product-stage { min-height: 570px; }
   .step-grid { grid-template-columns: 1fr; }
   .step-card { display: grid; grid-template-columns: 40% 1fr; column-gap: 26px; align-items: center; }
   .step-number { grid-column: 2; }
@@ -192,9 +192,9 @@ footer a { text-decoration: none; font-weight: 800; }
   h1 { font-size: clamp(43px, 13vw, 62px); }
   .hero-lead { font-size: 17px; }
   .hero-actions { display: grid; }
-  .product-stage { min-height: 390px; margin: 10px -5px 0; }
+  .product-stage { min-height: 350px; margin: 10px -5px 0; }
   .library-shot { width: 100%; }
-  .editor-peek { width: 130px; height: 205px; right: -5px; bottom: 0; }
+  .library-shot figcaption { padding: 12px 14px; }
   .statement { padding: 80px 0 95px; }
   .steps { padding: 75px 0 90px; }
   .step-card { display: block; }
